@@ -16,10 +16,10 @@ const toggleMenu = ()=>{
         &#9776; 
       </div>
         <ul className= {`nav-links ${isOpen ? 'open' : ''}`} >
-            <li><Link className='link' to='/Product'>Product</Link></li>
-            <li><Link className='link' to='/Cart'></Link></li>
+           <li><Link className='link' to='/Product'>Product</Link></li>
             <li><Link className='link' to='/Home'>Home</Link></li>
             <li><Link className='link' to='Signup'><i class="bi bi-person-hearts"></i></Link></li>
+            <li><Link className='link' to='/Cart'><i class="bi bi-cart3"></i></Link></li>
         </ul>
     </nav>
     </>
