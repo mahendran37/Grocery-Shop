@@ -1,0 +1,11 @@
+.aboud-section{
+    background-image: url('../Assesst/b-about.avif');
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+}
+
+.girl-image{
+    max-width: 80%;
+    height: auto;
+}
