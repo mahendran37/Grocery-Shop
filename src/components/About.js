@@ -9,7 +9,7 @@ const About = () => {
                 <div className='container'>
                     <div className='row align-items-center'>
                         {/*left side */}
-                        <div className='col-md-6 text-black'>
+                        <div className='col-md-6 text-white'>
                             <p className='small'>$30 Discoun for your first order</p>
                             <h2 className='fw-bold mb-3'>Get top ddeals,latest trends,and more.</h2>
                             <p>Join our email subscribtion and cupons.</p>
