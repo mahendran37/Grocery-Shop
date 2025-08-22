@@ -25,7 +25,7 @@ const Contact = () => {
 
           <div className="mb-3">
             <h5><i className="bi bi-Email"></i> Email</h5>
-            <p>support@shopgrid.com</p>
+            <p>support@Grocery.com</p>
           </div>
 
           <div className="d-flex gap-3">
@@ -60,5 +60,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;
