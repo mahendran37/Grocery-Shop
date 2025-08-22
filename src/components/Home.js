@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import modelimg from '../Assesst/modalgirl_img.jpg';
 //import homie from '../Asesst/organic.png';
-import logo from '../Asset/Logo/freshcart-logo.svg';
+//import logo from '../Asset/Logo/freshcart-logo.svg';
 import Fruit from '../Assesst/Fruit-VitaminD.webp';
 //import icegream from '../Asesst/icegream.jpg';
 //import persanolcare from '../Asesst/personal care.jpg';
@@ -167,5 +167,6 @@ const Home = () => {
     </>
   );
 };
+
 
 export default Home
