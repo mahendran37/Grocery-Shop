@@ -56,10 +56,11 @@ footer h5{
 
 footer .store-logo{
   position:relative;
-  left: 100px;
+  left: 80px;
 }
 
 footer h5:hover{
   color: rgb(231, 235, 47);
 }
+
 
