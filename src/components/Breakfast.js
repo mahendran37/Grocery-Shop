@@ -148,9 +148,7 @@ const Breakfast = () => {
                   </p>
                   <div>{renderStars(item.rating)}</div>
                   <i className=" heart bi bi-heart-fill" onClick={()=>addToWishlist(item)}></i>
-                  <button className="btn btn-success btn-sm" onClick={() => AddToCart(item)}
-
-                    style={{ position: "absolute", left: '3px', }}>+ Add</button>
+                  <button className="btn btn-success btn-sm" onClick={() => AddToCart(item)}>+ Add</button>
                 </div>
               </div>
             </div>
@@ -164,3 +162,4 @@ const Breakfast = () => {
 };
 
 export default Breakfast;
+
