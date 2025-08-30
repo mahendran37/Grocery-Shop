@@ -119,7 +119,7 @@ const Breakfast = () => {
         <Slider {...settings}>
           {snacks.map((item) => (
             <div key={item.id} className="p-2">
-              <div className="card text-center" style={{ height: '340px' }}>
+              <div className="card text-center" style={{ height: '350px' }}>
                 <div style={{ position: 'relative' }}>
                   {item.label && (
                     <span
@@ -162,6 +162,7 @@ const Breakfast = () => {
 };
 
 export default Breakfast;
+
 
 
 
