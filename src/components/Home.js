@@ -121,7 +121,7 @@ const Home = () => {
         
        
 
-        export default App;
+        
         {/*Products*/}
         <Breakfast />
         <Slider {...settings}>
@@ -168,5 +168,6 @@ const Home = () => {
     </>
   );
 };
+
 
 export default Home
