@@ -29,9 +29,9 @@ import '../components/Home.css';
 import { Link } from 'react-router-dom';
 
 const Products = [
-  { id: 1, name: "apple", price: 100, image: homeimg1, rating: 3, label: '10%', },
+  { id: 1, name: "Apple", price: 100, image: homeimg1, rating: 3, label: '10%', },
   { id: 2, name: "Lemon", price: 30, image: homeimg2, rating: 4, },
-  { id: 3, name: "apple", price: 50, image: homeimg3, rating: 3, label: '8%' },
+  { id: 3, name: "Pineapple", price: 50, image: homeimg3, rating: 3, label: '8%' },
   { id: 4, name: "Banana", price: 10, image: homeimg4, rating: 2, },
   { id: 5, name: "Guava", price: 70, image: homeimg5, rating: 4, label: '15%' },
   { id: 6, name: "mango", price: 110, image: homeimg6, rating: 3, oldprice: '150' },
