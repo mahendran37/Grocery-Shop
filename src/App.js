@@ -13,6 +13,8 @@ import Wishlist from "./components/Wishlist";
 import Contact from "./components/Contact";
 import Loading from "./components/Loading";
 import { useEffect, useState } from "react";
+import { Table } from "react-bootstrap";
+
 
 function App() {
     const [loading, setLoading] = useState(true);

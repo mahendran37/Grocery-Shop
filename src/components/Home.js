@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Footer from './Footer';
+import {motion} from 'framer-motion'
 import About from './About';
 import Product from './Product';
 import { CartContext } from './CartProvider';
@@ -87,7 +88,6 @@ const Home = () => {
   return (
     <>
 
-
        <Carousel >
           <Carousel.Item>
             <img className=' bike d-block w-100 py-3' src={bannerimg} alt='banner1' style={{borderRadius:"40px",}}/>
@@ -115,7 +115,7 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
        
-      <div className="container">
+      <motion.div className="container">
  
         {/*carousel*/}
         
@@ -137,7 +137,7 @@ const Home = () => {
                       {item.label}
                     </span>
                   )}
-                  <img
+                  <motion.img
                     src={item.image}
                     className="card-img-top py-4"
                     alt={item.name}
@@ -162,7 +162,7 @@ const Home = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </motion.div>
       <About />
       <Footer />
     </>

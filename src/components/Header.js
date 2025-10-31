@@ -36,6 +36,8 @@ const Header = () => {
               <li><Link className='nav-link' to='/Product'>Product</Link></li>
               <li><Link className='nav-link' to='Signup'><i className="bi bi-person-fill-add"></i></Link></li>
               <li><Link className='nav-link' to='/Contact'>Contact</Link></li>
+              <li><Link className='nav-link' to='Table'></Link></li>
+              <li><Link className='nav-link' to='Homes'></Link></li>
 
               {/* Dropdown */}
               <NavDropdown title="All Categories" id="basic-nav-dropdown">
@@ -69,4 +71,3 @@ const Header = () => {
 }
 
 export default Header;
-

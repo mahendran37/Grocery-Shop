@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext } from './CartProvider'
 
 const Cart = () => {
-  const { cartItem,removeFromCartItem} = useContext(CartContext);
+  const { cartItem,removeFromCartItem,increaseQty,decreaseQty,setCartItem} = useContext(CartContext);
   const renderStars = (count) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -16,7 +16,8 @@ const Cart = () => {
   };
 
   //total price calculation
-  const totalprice = cartItem.reduce((acc, product) => acc + product.price, 0);
+  const totalQty = cartItem.reduce((acc, product)=> acc + (product.qty || 1),0);
+  const totalprice = cartItem.reduce((acc, product)=> acc + product.price * (product.qty || 1),0);
   return (
     <>
       <div className='container '>
@@ -59,7 +60,16 @@ const Cart = () => {
                   </p>
                   <div>{renderStars(item.rating)}</div>
 
+                  <div className='d-flex justify-content-center align-items-center gap-2 mt-3'>
+
+                   <button className='btn btn-outline-warning' onClick={()=> item.qty >1 && decreaseQty(item.id)}>-</button>
+                   
+                   <span className='fw-bold'>{item.qty || 1}</span>
+
+                   <button className='btn btn-outline-warning'onClick={()=>increaseQty(item.id)}>+</button>
+
                   <button className="btn btn-primary" onClick={()=>removeFromCartItem(item.id)}>Remove</button>
+                  </div>
 
                 </div>
               </div>
@@ -67,7 +77,12 @@ const Cart = () => {
             </div>
             </div>
           )))}
+
+          <div className='text-center my-4 p-3 bg -light rounded shadow-sm'>
+            <h5>total items {totalQty}</h5>
+          </div>
         <h3>Total Price: ₹{totalprice}</h3>
+
 
       </div>
     </>
